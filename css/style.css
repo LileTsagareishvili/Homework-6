@@ -1,45 +1,43 @@
 .day {
     height: 650px;
     width: 1370px;
-    /*border: 1px solid ;*/
-    /*margin: 5rem auto;*/
     background: url(../img/img1.png);
-    background-size: cover;
-    position: relative;
-/*    webkit-box-shadow: 2px 1px 15px 3px #fff8af;
-    box-shadow: 2px 1px 15px 3px #fff8af;
-    overflow-x: hidden;*/
+    background-size: auto;
 }
 .city {
     height: 650px;
     width: 1370px;
     background: url(../img/city.png);
     background-size: cover;
-    display: block;
-    position: absolute;
     bottom: 0;
     left: 0;
-    background-repeat: repeat-x;
-    transition: moveRight 1s linear infinite;
-
 }
+
 .sun {
-    width: 130px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     position: absolute;
-    top: 8%;
-    right: 15%;
-    transition: all 4s linear;
+    top: 0px;
+    right: 70px;
+    animation: mysun 20s linear infinite alternate-reverse;
 }
-.sun:hover {
-    transform: translate(-50%, -50%) rotate(45deg);
 
-}
+@keyframes mysun {
+  0%   {top: 0px;}
+  25%  {top: 70px;}
+  75%  {top: 140px}
+  100% {top: 210px;}
+} 
+
 .taxi {
-    width: 120px;
-    height: 60px;
-    position: absolute;
-    bottom: 3%;
-    left: 24%;
-    animation: suspension 1s linear infinite;
+    width: 140px;
+    height: 70px;
+    position: relative;
+    bottom: 85px;
+    left: 0;
+    animation: mytaxi 10s linear infinite;
+}
+@keyframes mytaxi {
+  from {left: 0px;}
+  to {left: 1370px;}
 }
