@@ -70,17 +70,17 @@
     to {left: 1370px;}   
 }
 .plane {
-    width: 250px;
-    height: 150px;
+    width: 150px;
+    height: 100px;
     position: absolute;
     top: 30px;
     left: 20px;
-    animation: myplane 11s linear infinite reverse;
+    animation: myplane 15s linear infinite;
 }
 @keyframes myplane {
-  from {left: 20px;}
-  to {left: 1370px;}
-} 
+    from {left: 0px;}
+    to {left: 1370px;}   
+}
 .birds {
     width: 150px;
     height: 70px;
@@ -99,7 +99,7 @@
     position: absolute;
     top: 0px;
     right: 300px;
-    animation: clouds 30s linear infinite alternate-reverse;
+    animation: clouds 50s linear infinite alternate-reverse;
 }
 
 @keyframes clouds {
