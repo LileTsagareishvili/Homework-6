@@ -1,11 +1,11 @@
 .day {
-    height: 650px;
+    height: 660px;
     width: 1370px;
     background: url(../img/img1.png);
-    background-size: auto;
+    background-size: cover;
 }
 .city {
-    height: 650px;
+    height: 660px;
     width: 1370px;
     background: url(../img/city.png);
     background-size: cover;
@@ -14,8 +14,8 @@
 }
 
 .sun {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     position: absolute;
     top: 0px;
     right: 70px;
@@ -24,20 +24,86 @@
 
 @keyframes mysun {
   0%   {top: 0px;}
-  25%  {top: 70px;}
-  75%  {top: 140px}
-  100% {top: 210px;}
+  25%  {top: 50px;}
+  75%  {top: 100px}
+  100% {top: 150px;}
 } 
 
 .taxi {
-    width: 140px;
-    height: 70px;
-    position: relative;
-    bottom: 85px;
+    width: 150px;
+    height:80px;
+    position: absolute;
+    bottom: 10px;
     left: 0;
     animation: mytaxi 10s linear infinite;
 }
+
 @keyframes mytaxi {
   from {left: 0px;}
+  to {left: 1270px;}
+}
+
+.ferrari {
+    width: 180px;
+    height: 80px;
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+    animation: mycar 12s linear infinite reverse;
+}
+@keyframes mycar {
+  from {left: 20px;}
   to {left: 1370px;}
+} 
+
+.kido{
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    bottom: 65px;
+    left: 10px;
+    animation: mykido 10s linear infinite reverse;
+}
+
+@keyframes mykido {
+    from {left: 0px;}
+    to {left: 1370px;}   
+}
+.plane {
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    animation: myplane 11s linear infinite reverse;
+}
+@keyframes myplane {
+  from {left: 20px;}
+  to {left: 1370px;}
+} 
+.birds {
+    width: 150px;
+    height: 70px;
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    animation: birds 30s linear infinite alternate;
+}
+@keyframes birds {
+    from {left: 0px;}
+    to {left: 1370px;}
+}
+.cloud {
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    top: 0px;
+    right: 300px;
+    animation: clouds 30s linear infinite alternate-reverse;
+}
+
+@keyframes clouds {
+    from {left: 200px;}
+    to {left: 1000px;}
+ 
 }
